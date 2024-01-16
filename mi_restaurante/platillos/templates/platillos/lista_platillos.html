@@ -1,0 +1,19 @@
+<!-- platillos/templates/platillos/lista_platillos.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Platillos</title>
+</head>
+<body>
+    <h1><h1 class="text-wrap">POTTER ES UN PERRA MUY SUCIA QUE LE GUTA LA VERGA EN EL CULO SE VA A CHUPAR LA PIJA DE LOS HOMELESS EN ESTADOS UNIDOS</h1>
+</h1>
+    <ul>
+        {% for platillo in platillos %}
+            <li>{{ platillo.nombre }} - {{ platillo.descripcion }} - ${{ platillo.precio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
